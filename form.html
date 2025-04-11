@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <!-- for external css -->
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+<body>
+    <header>
+    </header>
+    <form action="https://formsubmit.co/6393dcf7680de0a5632486cf4c66b1d6" method="Post" target="_blank">
+        <!-- what is method attribute -->
+        <h4>Pilot Service Form</h4>
+
+        <!-- name, age, number labels and inputs -->
+         <div class="wrapping-div">
+            <label for="name" class="name-label">Name: </label>
+            <input type="text" id="name" name="name" required />
+        </div>
+        
+        <div class="wrapping-div">
+            <label for="age" class="age-label">Age: </label>
+            <input type="number" id="age" name="age" required min="5" max="75" />
+        </div>
+        
+        <div class="wrapping-div">
+            <label for="contact" class="contact-label">Contact Number: </label>
+            <input type="number" id="contact" name="contact" required />
+        </div>
+
+        <div class="wrapping-div">
+            <label for="contact-address" class="contact-address-label">E-mail address: </label>
+            <input type="email" id="contact-address" name="email" required />
+        </div>
+        
+        <div class="wrapping-div">
+            <label for="username" class="username-label">Username: </label>
+            <input type="text" id="username" name="username" required />
+        </div>
+        
+        <div class="wrapping-div">
+            <label for="user-password" class="pass-label">Password: </label>
+            <input type="text" id="user-pas sword" name="password" required />
+        </div>
+
+        <div class="wrapping-div">
+            <label for="user-identity-number" class="uid-label">UID: </label>
+            <input type="number" id="user-identity-number" name="UID" required />
+        </div>
+
+        <!-- gender selector -->
+        <!-- <label for="gender" class="gender-label">Gender: </label>
+        <select name="gender" id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select><br /> -->
+        
+        <div class="wrapping-div field-wrap">
+            <fieldset class="field-container">
+                <legend>Select Service(s)</legend>
+                <label>
+                    <input type="checkbox" name="Selected Service[]" value="100% Anemoculus"> 100% Anemoculus
+                </label>
+                <label>
+                    <input type="checkbox" name="Selected Service[]" value="100% Geoculus"> 100% Geoculus
+                </label>
+                <label>
+                    <input type="checkbox" name="Selected Service[]" value="100% Electroculus">100% Electroculus
+                </label>
+                <label>
+                    <input type="checkbox" name="Selected Service[]" value="100% Hydroculus">100% Hydroculus
+                </label>
+                <label>
+                    <input type="checkbox" name="Selected Service[]" value="Collect Primos from Events"> Collect Primos from Events
+                </label>
+            </fieldset>
+        </div>
+        <div class="wrapping-div">
+            <label for="m-feedback" class="feedback-label">Feedback: </label>
+            <textarea name="feedback" id="m-feedback" cols="45" rows="4" placeholder="Comment your suggestions"></textarea>
+        </div>
+        
+        <div class="wrapping-div">
+            <button class="do-submit" type="submit">Submit</button>
+        </div>
+    </form>
+    <footer>
+        <hr>
+        <p>&copy; <span id="keqing">Keqing</span> main since 2021. All rights reserved.</p>
+        <hr>
+    </footer>
+</body>
+</html>
